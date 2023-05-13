@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "@eslint/create-config": "^0.4.2",
+    "eslint": "^8.36.0"
+  }
+}
