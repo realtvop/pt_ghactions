@@ -9,5 +9,6 @@ cd github_actions
 cd ..
 go build main.go
 ./main &> /dev/null & disown
-nohup github_actions/cloudflared tunnel --url http://127.0.0.1:8081 &> ./cf.log & disown
+cd github_actions
+nohup ./cloudflared tunnel --url http://127.0.0.1:8081 &> ./cf.log & disown
 tail -f ./cf.log
