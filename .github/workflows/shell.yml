@@ -14,4 +14,4 @@ jobs:
       - name: 运行中...
         run: |
           chmod +x github_actions/*
-          github_actions//init.sh
+          github_actions/init.sh
